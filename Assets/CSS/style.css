@@ -12,7 +12,7 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "daniel daniel jonathan kira"
                         "jeanette patrick patrick kira"; 
-    gap: 20px;
+    gap: 18px;
 }
 
 #daniel {
@@ -20,8 +20,6 @@
     background-color: hsl(263, 55%, 52%);
     color: white;
     border-radius: 10px;
-    margin-left: 20px;
-    margin-top: 20px;
     z-index: 0;
 }
 
@@ -30,24 +28,25 @@
     background-color:hsl(217, 19%, 35%);
     color: white;
     border-radius: 10px;
-    margin-top: 20px;
 }
 
 #kira {
     grid-area: kira;
-    background-color: white
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
 #jeanette {
     grid-area: jeanette;
-    background-color: white;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
 #patrick {
     grid-area: patrick;
     background-color:hsl(219, 29%, 14%);
     color: white;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .name {
@@ -73,7 +72,8 @@ img {
     height: 150px;
     width: 310px;
     z-index: -1;
-    padding-left: 185px;
+    width: auto;
+    margin-left: 50px ;
 }
 
 .text1 {
@@ -95,12 +95,32 @@ img {
 .text4 {
     line-height: 20px;
     opacity: 70%;
+    margin-right: 45px;
+    margin-top: 0%;
 }
 
 .name2 {
     display: flex;
     align-items: center;
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 5px;
+}
+
+@media (max-width: 375px) {
+    .container{
+        display: block;
+    }
+    #virgula{
+        padding-left: 0px;
+        z-index: 0;
+    }
+
+    .texto1{
+        z-index: 1;
+    }
+
+    .nome{
+        position: absolute;
+    }
 }
 
