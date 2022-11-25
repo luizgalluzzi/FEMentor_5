@@ -5,6 +5,10 @@
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 .container {
     display: grid;
     height: 100vh;
@@ -12,7 +16,11 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "daniel daniel jonathan kira"
                         "jeanette patrick patrick kira"; 
-    gap: 18px;
+    gap: 15px;
+}
+
+.virgula {
+    background: url(../images/bg-pattern-quotation.svg) no-repeat;
 }
 
 #daniel {
@@ -32,13 +40,13 @@
 
 #kira {
     grid-area: kira;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 10px;
 }
 
 #jeanette {
     grid-area: jeanette;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -66,26 +74,6 @@ img {
     padding-right: 20px;
 }
 
-#virgula {
-    border-radius: 0%;
-    border: none;
-    height: 150px;
-    width: 310px;
-    z-index: -1;
-    width: auto;
-    margin-left: 50px ;
-}
-
-.text1 {
-    margin-top: -36px;
-    z-index: 1;
-    font-size: 25px;
-}
-
-.text2 {
-    line-height: 20px;
-    opacity: 70%;
-}
 
 .text3 {
     margin-top: 20px;
@@ -96,22 +84,22 @@ img {
     line-height: 20px;
     opacity: 70%;
     margin-right: 45px;
-    margin-top: 0%;
+    margin-top: -20px;
 }
 
 .name2 {
     display: flex;
     align-items: center;
     margin-left: 30px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 @media (max-width: 375px) {
     .container{
         display: block;
     }
-    #virgula{
-        padding-left: 0px;
+    div #virgula{
+        padding-left: 50px;
         z-index: 0;
     }
 
